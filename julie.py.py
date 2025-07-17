@@ -12,8 +12,6 @@ warnings.filterwarnings("ignore", category=UserWarning, module='wikipedia')
 genai.configure(api_key="AIzaSyB7HM_I9xyJ8sCyZrdqdHOODChzs4ek8Bs") 
 model = genai.GenerativeModel('models/gemini-2.5-pro')
 
-
-# Initialize TTS engine
 engine = pyttsx3.init('sapi5')
 engine.setProperty('rate', 170)
 voices = engine.getProperty('voices')
