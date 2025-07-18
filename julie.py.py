@@ -6,8 +6,6 @@ import datetime
 import pyjokes
 import os
 import sys
-import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module='wikipedia')
 
 genai.configure(api_key="AIzaSyB7HM_I9xyJ8sCyZrdqdHOODChzs4ek8Bs") 
 model = genai.GenerativeModel('models/gemini-2.5-pro')
